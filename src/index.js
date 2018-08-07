@@ -1,7 +1,9 @@
+import "./css/styles.scss";
 import React from "react";
 import { render } from "react-dom";
+import Game from "./Game";
 
 render(
-  <h1>Tic Tac Toe</h1>,
+  <Game />,
   document.getElementById("root")
 );
