@@ -3,36 +3,53 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  .board-status {
-    margin-bottom: 5px;
-  }
 
-  .board-row {
-
-    &:after {
-      clear: both;
-      content: "";
-      display: table;
-    }
-
-    .square {
-      background: #fff;
-      border: 1px solid #999;
+  #game {
+    #game-board {
       float: left;
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 34px;
-      height: 34px;
-      margin-right: -1px;
-      margin-top: -1px;
-      padding: 0;
-      text-align: center;
-      width: 34px;
+      width: 50%;
 
-      &:focus {
-        outline: none;
+      .board {
+        position: relative;
+        top: 10px;
+        margin: 0 auto;
+        width: 50%;
+
+        .board-row {
+
+            &:after {
+              clear: both;
+              content: "";
+              display: table;
+            }
+
+            .square {
+              background: #fff;
+              border: 1px solid #999;
+              float: left;
+              font-size: 24px;
+              font-weight: bold;
+              line-height: 34px;
+              height: 34px;
+              margin-right: -1px;
+              margin-top: -1px;
+              padding: 0;
+              text-align: center;
+              width: 34px;
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
       }
     }
 
+    #game-info {
+      float: right;
+      width: 50%;
+    }
   }
+
+
 }
